@@ -14,7 +14,7 @@ double parse_number(const std::string &expression) {
         i++;
     } else if (expression[i] == '-') {
         sign = -1;
-        i++;
+        i++; 
     }
     while (i < expression.size() && isdigit(expression[i])) {
         result = result * 10 + (expression[i] - '0');
